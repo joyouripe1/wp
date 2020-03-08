@@ -1,0 +1,73 @@
+body{
+    height: calc(100vh - 8cm);
+    padding: 4cm;
+    color: rgba(255, 255, 255, 0,75);
+    background-image: url('image.jpg');
+}
+
+.garis {
+    position: relative;
+    top: 50%;
+    width: 24cm;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0,75);
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translate(-50%);
+}
+
+.animasi-ketikan {
+    animation: ketikan 4s steps(20) 1s 1 normal both,
+    kedip 500ms steps(20) infinite normal;
+}
+@keyframes ketikan {
+    from {
+        width: 0;        
+    }
+    to {
+        width: 9cm;
+    }
+}
+
+@keyframes kedip {
+    from {
+        border-right-color: rgba(255, 255, 255, 0,75);
+
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    height: 300px;
+}
+a:hover{
+    color: aquamarine;
+}
+
+@keyframes itu{
+    from { left: 0;}
+    to { left: 40%;}
+}
+
+.key {
+    background-image: url('');
+    width: 145px;
+    height: 100px;
+    position: relative;
+    margin: 50px;
+    animation-name: itu;
+    animation-duration: 3s;
+
+}
